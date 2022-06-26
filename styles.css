@@ -1,0 +1,177 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+*, *::before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+/* Variables */
+
+:root {
+    --color1: #c5c6c7;
+    --color2: #66fcf1;
+    --color3: #45a29e;
+    --color4: #1f2833;
+    --color5: #0b0c10;
+    --black: black;
+    --white: white;
+
+    --font-name: 3.5rem;
+    --font-h1: 3rem;
+    --font-h2: 2rem;
+    --font-h3: 1.5rem;
+    --font-body: 1rem;
+
+    --font-family-primary: 'Cascadia Code', Arial;
+    --font-family-secondary: ;
+
+}
+
+/* Page Styles */
+
+#page {
+    margin: 0;
+    padding: 0;
+    background: var(--color4);
+    font-family: var(--font-family-primary);
+}
+
+#my-logo {
+   max-width: 10rem;
+}
+
+span {
+    color: var(--color2);
+}
+
+img { 
+    display: block;
+    max-width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+/* Typography */
+
+#intro-hello {
+    font-size: var(--font-h1);
+    color: var(--white);
+}
+
+#intro-name {
+    font-size: var(--font-name);
+    color: var(--color2);
+}
+
+#intro-p {
+    font-size: var(--font-h3);
+}
+
+.section-title {
+    font-size: var(--font-h2);
+    color: var(--color1);
+}
+
+@media (min-width: 800px) {
+    :root {
+    --font-name: 4.5rem;
+    --font-h1: 4rem;
+    --font-h2: 3rem;
+    --font-h3: 2.5rem;
+    --font-body: 2rem;
+    }
+}
+
+/* Nav Section */
+
+#nav-section {
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+}
+
+#nav-section #nav-list {
+    display: inline-block;
+    align-items: center;
+}
+
+#nav-section #nav-list .nav-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#nav-section #nav-list .nav-item .nav-link {
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: capitalize;
+    transition: transform .4s;
+}
+
+#nav-section #nav-list .nav-item .nav-link:hover {
+    color: var(--color2);
+    transform: scale(1.2);
+}
+
+#nav-section #nav-list {
+    margin: 5px 0;
+    text-align: start;
+    border: 1px solid red;
+}
+
+#resume {
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    transition: transform .4s;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    padding: 3px 3px;
+}
+
+#resume:hover {
+    color: var(--color2);
+    border-color: var(--color2);
+    transform: scale(1.2);
+}
+
+/* Intro Section */
+
+#intro img {
+    border: 3px solid var(--color2);
+    border-radius: 10px;
+    width: 30%;
+}
+
+#hello-div {
+    display: inline-block;
+}
+
+aside img {
+    float: right;
+}
+
+#intro-p, #about-me p {
+color: var(--color1);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--color5);
+}
+
+footer p {
+    color:  var(--color2);
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
